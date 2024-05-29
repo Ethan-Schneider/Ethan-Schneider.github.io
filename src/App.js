@@ -41,6 +41,7 @@ function App() {
           <div class="social-links">
             <a href="https://www.linkedin.com/in/ethanschneiders/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             <a href="https://scholar.google.com/citations?user=0ubC95wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="google-scholar"><i style={{height:"42px"}} class="ai ai-google-scholar"></i></a>
+            <a href="https://x.com/EthanSchneider_" target="_blank" rel="noopener noreferrer" class="twitter"><i class="bx bxl-twitter"></i></a>
             {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer" class='github'><i class="bx bxl-github"></i></a> */}
           </div>
           <a href={CV} target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-download"> Download CV</a>
