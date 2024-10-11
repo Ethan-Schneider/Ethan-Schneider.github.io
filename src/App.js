@@ -13,6 +13,7 @@ import profile from './assets/img/profile_pics/london_pic.jpeg'
 import CV from './assets/files/Ethan_Schneider_CV_2024.pdf'
 
 import CEMRS_diag from "./assets/img/CEMRS_diagram.png"
+import Delta_diag from "./assets/img/soft_delta_robot.png"
 function App() {
   return (
     <div className="App">
@@ -93,11 +94,28 @@ systems test applications. After my undergrad, I began my M.S. in Robotics at Ge
                 <h5>CE-MRS: Contrastive Explanations for Multi-Robot Systems </h5>          
                 <p>
                 By <b>Ethan Schneider</b>, Daniel Wu, Devleena Das, and Sonia Chernova <br/>
-                <i>Under Review</i> <br/> <br/></p>  
+                <i>In: IEEE Robotics and Automation Letters ( Volume: 9, Issue: 11, November 2024) </i> <br/>
+                </p>  
                
-                {/* <a href="https://arxiv.org/abs/2310.16776" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Preprint</a> */}
+                <a href="https://ieeexplore.ieee.org/abstract/document/10697262" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Paper</a>
               </div>
-            </div>            
+            </div>       
+
+            <div class="row my-5">
+                <div class="col-sm text-center">
+                    <img style={{height:"250px"}} src={Delta_diag} class="img-fluid pr-3" alt="Responsive image"/>
+                </div>
+                <div class="col-sm">
+                <h5>Soft Robots: Computational Design, Fabrication, and Position Control of a Novel 3-DOF Soft Robot </h5>          
+                <p>
+                By Martin Garcia, Andrea-Contreras Esquen, Mark Sabbagh, Devin Grace, <b> Ethan Schneider </b>,
+                Turaj Ashuri, Razvan Cristian Voicu, Ayse Tekes and Amir Ali Amiri Moghadam <br/>
+                <i>In: Machines 2024, 12(8), 539 </i> <br/>
+                </p>  
+               
+                <a href="https://www.mdpi.com/2075-1702/12/8/539#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Paper</a>
+              </div>
+            </div>       
 
             {/* <div class="row my-5">
                 <div class="col-sm text-center">
