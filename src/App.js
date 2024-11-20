@@ -10,7 +10,7 @@ import './assets/css/style.css'
 import LinkedIn_img from './assets/img/linkedin_icon_sld_backgrnd.png'
 import GoogleScholar_img from './assets/img/google_scholar_icon-removebg.png'
 import profile from './assets/img/profile_pics/london_pic.jpeg'
-import CV from './assets/files/Ethan_Schneider_CV_2024.pdf'
+import CV from './assets/files/Ethan_Schneider.pdf'
 
 import CEMRS_diag from "./assets/img/CEMRS_diagram.png"
 import Delta_diag from "./assets/img/soft_delta_robot.png"
