@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.10333688.css",
-    "main.js": "/static/js/main.605c6dcd.js",
+    "main.js": "/static/js/main.fbe56ceb.js",
     "static/media/background-img.JPG": "/static/media/background-img.aba5a9a612f89936f216.JPG",
     "static/media/london_pic.jpeg": "/static/media/london_pic.c207db1fe5561be27ca4.jpeg",
     "static/media/boxicons.svg": "/static/media/boxicons.3788bd437a2abd27bd9f.svg",
@@ -11,21 +11,21 @@
     "static/media/boxicons.eot": "/static/media/boxicons.691d0bb604ad736b6554.eot",
     "static/media/boxicons.woff": "/static/media/boxicons.83ea8051293b9698c379.woff",
     "static/media/boxicons.ttf": "/static/media/boxicons.3ba326c0f3cbdc18538d.ttf",
+    "static/media/Ethan_Schneider.pdf": "/static/media/Ethan_Schneider.b3cb665ec5830a858e54.pdf",
     "static/media/academicons.svg?v=1.8.6": "/static/media/academicons.b9799c257810ade1d4cf.svg",
     "static/media/CEMRS_diagram.png": "/static/media/CEMRS_diagram.2d4bd5c3a11798028f22.png",
     "static/media/boxicons.woff2": "/static/media/boxicons.4d841f88f087a9fafd78.woff2",
     "static/media/academicons.eot?v=1.8.6": "/static/media/academicons.c6027a1f695509e44b7d.eot",
     "static/media/academicons.woff?v=1.8.6": "/static/media/academicons.81999d33018c0cad9e41.woff",
     "static/media/academicons.ttf?v=1.8.6": "/static/media/academicons.15e4cc4e96756f5646d2.ttf",
-    "static/media/Ethan_Schneider_CV_2024.pdf": "/static/media/Ethan_Schneider_CV_2024.b620a850ef639c0bdf89.pdf",
     "static/media/linkedin_icon_sld_backgrnd.png": "/static/media/linkedin_icon_sld_backgrnd.6c49bfa6096a24e64e9e.png",
     "static/media/google_scholar_icon-removebg.png": "/static/media/google_scholar_icon-removebg.da4577fe20d770baee07.png",
     "index.html": "/index.html",
     "main.10333688.css.map": "/static/css/main.10333688.css.map",
-    "main.605c6dcd.js.map": "/static/js/main.605c6dcd.js.map"
+    "main.fbe56ceb.js.map": "/static/js/main.fbe56ceb.js.map"
   },
   "entrypoints": [
     "static/css/main.10333688.css",
-    "static/js/main.605c6dcd.js"
+    "static/js/main.fbe56ceb.js"
   ]
 }
