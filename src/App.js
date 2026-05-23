@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Gallery from './Gallery';
 import './assets/vendor/bootstrap/css/bootstrap.min.css'
 import './assets/vendor/icofont/icofont.min.css'
 import './assets/vendor/academicons/css/academicons.min.css'
@@ -12,9 +13,49 @@ import GoogleScholar_img from './assets/img/google_scholar_icon-removebg.png'
 import profile from './assets/img/profile_pics/london_pic.jpeg'
 import CV from './assets/files/Ethan_Schneider.pdf'
 
+import M2M_diag from "./assets/img/M2M.jpg"
 import CEMRS_diag from "./assets/img/CEMRS_diagram.png"
 import Delta_diag from "./assets/img/soft_delta_robot.png"
+// Personal section subsections — set to false to hide from visitors
+const SHOW_PROJECTS = true;
+const SHOW_GALLERY = true;
+
 function App() {
+  const [activeSection, setActiveSection] = useState('hero');
+  const [currentPage, setCurrentPage] = useState('home');
+
+  // Hooks must all be called before any early return
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 300;
+      const sections = document.querySelectorAll('section[id]');
+      let current = 'hero';
+      sections.forEach(section => {
+        if (section.offsetTop <= scrollPos) {
+          current = section.id;
+        }
+      });
+      setActiveSection(current);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navClass = (id) => activeSection === id ? 'active' : '';
+
+  const openGallery = () => { setCurrentPage('gallery'); window.scrollTo(0, 0); };
+  const closeGallery = () => {
+    setCurrentPage('home');
+    setTimeout(() => {
+      document.getElementById('personal')?.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  };
+
+  if (currentPage === 'gallery') {
+    return <Gallery onBack={closeGallery} />;
+  }
+
   return (
     <div className="App">
       {/* <!-- ======= Mobile nav toggle button ======= --> */}
@@ -25,9 +66,10 @@ function App() {
 
         <nav class="nav-menu">
           <ul>
-            <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-            <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li className={navClass('hero')}><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li className={navClass('about')}><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li className={navClass('portfolio')}><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li className={navClass('personal')}><a href="#personal"><i class="bx bx-smile"></i> <span>Personal</span></a></li>
           </ul>
         </nav>
         {/* <!-- .nav-menu --> */}
@@ -67,9 +109,9 @@ function App() {
               <div class="col-9 content">
                 <p class="lead">
 
-                  I'm a first year Ph.D. student at the Georgia Institute of Technology, advised by <a href="https://faculty.cc.gatech.edu/~chernova/" target="_blank" rel="noopener noreferrer">Sonia Chernova</a> as a part of the <a href="https://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL) Lab</a>. My research focuses on Task Allocation and Motion Planning (TAMP) for large-scale homogeneous systems in structured environments and improving the explainability of multi-agent systems using Explainable AI (XAI) techniques.
+                  I'm a third year Ph.D. student at the Georgia Institute of Technology, advised by <a href="https://faculty.cc.gatech.edu/~chernova/" target="_blank" rel="noopener noreferrer">Sonia Chernova</a> as a part of the <a href="https://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL) Lab</a>. My research focuses on Task Allocation and Motion Planning (TAMP) for large-scale homogeneous systems in structured environments and improving the explainability of multi-agent systems using Explainable AI (XAI) techniques.
                   <br/> <br/>
-                  Previously, I graduated with a B.S. in Mechatronoics Engineering from Kennesaw State University, graduated with <em>summa cum laude</em> and honors. During this time, I worked as a co-op at Georgia Tech Research Institute (GTRI), developing Windows and embedded software for aircraft systems and aircraft protection
+                  Previously, I graduated with a B.S. in Mechatronics Engineering from Kennesaw State University, graduated with <em>summa cum laude</em> and honors. During this time, I worked as a co-op at Georgia Tech Research Institute (GTRI), developing Windows and embedded software for aircraft systems and aircraft protection
 systems test applications. After my undergrad, I began my M.S. in Robotics at Georgia Institute of Technology in Fall 2022, then transferred to the Ph.D. in Robotics as of January 2024.
 
                 </p>
@@ -85,6 +127,21 @@ systems test applications. After my undergrad, I began my M.S. in Robotics at Ge
             <div class="section-title">
               <h2>Research</h2>
             </div>
+
+            <div class="row my-5">
+                <div class="col-sm text-center">
+                    <img style={{height:"180px"}} src={M2M_diag} class="img-fluid pr-3" alt="Responsive image"/>
+                </div>
+                <div class="col-sm">
+                <h5>Many-to-Many Multi-Agent Pickup and Delivery </h5>          
+                <p>
+                By <b>Ethan Schneider</b>, Jingkai Chen, Tianyi Gu, Kunlei Lian, Seth Hutchinson, Sonia Chernova <br/>
+                <i>To be Published: ICRA 2026 </i> <br/>
+                </p>  
+               
+                <a href="https://arxiv.org/pdf/2605.07835" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Paper</a>
+              </div>
+            </div>  
 
             <div class="row my-5">
                 <div class="col-sm text-center">
@@ -134,6 +191,47 @@ systems test applications. After my undergrad, I began my M.S. in Robotics at Ge
         </div>     
         </section>
         {/* <!-- End Portfolio Section --> */}
+
+        {/* <!-- ======= Personal Section ======= --> */}
+        <section id="personal" class="personal">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+              <h2>Personal</h2>
+            </div>
+
+            <div class="row justify-content-center">
+              {SHOW_PROJECTS && (
+                <div class="col-md-5 mb-4">
+                  <div class="personal-card">
+                    <div class="personal-card-icon">
+                      <i class="bx bx-code-alt"></i>
+                    </div>
+                    <h5>Personal Projects</h5>
+                    <p>My collection of software and engineering projects outside of my research.</p>
+                    {/* Replace href with actual link when ready */}
+                    <a href="#" class="btn btn-outline-dark btn-sm">Coming Soon</a>
+                  </div>
+                </div>
+              )}
+              {SHOW_GALLERY && (
+                <div class="col-md-5 mb-4">
+                  <div class="personal-card">
+                    <div class="personal-card-icon">
+                      <i class="bx bx-photo-album"></i>
+                    </div>
+                    <h5>Photo Galleries</h5>
+                    <p>Photos from my travels, hobbies, and other adventures.</p>
+                    {/* <button onClick={openGallery} className="btn btn-outline-dark btn-sm">View Gallery</button> */}
+                    <a href="#" class="btn btn-outline-dark btn-sm">Coming Soon</a>
+                  </div>
+                </div>
+              )}
+            </div>
+
+          </div>
+        </section>
+        {/* <!-- End Personal Section --> */}
 
       </main>
   </div>
