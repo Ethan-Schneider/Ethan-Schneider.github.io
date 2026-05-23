@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.05b6876f.css",
-    "main.js": "/static/js/main.fc1ba299.js",
+    "main.css": "/static/css/main.a08a0165.css",
+    "main.js": "/static/js/main.7bbb51e4.js",
     "static/media/background-img.JPG": "/static/media/background-img.aba5a9a612f89936f216.JPG",
     "static/media/london_pic.jpeg": "/static/media/london_pic.c207db1fe5561be27ca4.jpeg",
     "static/media/boxicons.svg": "/static/media/boxicons.f933d3d316bea9fa167f.svg",
@@ -14,6 +14,7 @@
     "static/media/Ethan_Schneider.pdf": "/static/media/Ethan_Schneider.9b5393dc2e85595d1ca5.pdf",
     "static/media/academicons.svg?v=1.8.6": "/static/media/academicons.e868b5055f010359924b.svg",
     "static/media/CEMRS_diagram.png": "/static/media/CEMRS_diagram.2d4bd5c3a11798028f22.png",
+    "static/media/M2M.jpg": "/static/media/M2M.a045f3c4221ba1be89a8.jpg",
     "static/media/boxicons.woff2": "/static/media/boxicons.4d841f88f087a9fafd78.woff2",
     "static/media/academicons.eot?v=1.8.6": "/static/media/academicons.c6027a1f695509e44b7d.eot",
     "static/media/academicons.woff?v=1.8.6": "/static/media/academicons.81999d33018c0cad9e41.woff",
@@ -21,11 +22,11 @@
     "static/media/linkedin_icon_sld_backgrnd.png": "/static/media/linkedin_icon_sld_backgrnd.6c49bfa6096a24e64e9e.png",
     "static/media/google_scholar_icon-removebg.png": "/static/media/google_scholar_icon-removebg.da4577fe20d770baee07.png",
     "index.html": "/index.html",
-    "main.05b6876f.css.map": "/static/css/main.05b6876f.css.map",
-    "main.fc1ba299.js.map": "/static/js/main.fc1ba299.js.map"
+    "main.a08a0165.css.map": "/static/css/main.a08a0165.css.map",
+    "main.7bbb51e4.js.map": "/static/js/main.7bbb51e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.05b6876f.css",
-    "static/js/main.fc1ba299.js"
+    "static/css/main.a08a0165.css",
+    "static/js/main.7bbb51e4.js"
   ]
 }
