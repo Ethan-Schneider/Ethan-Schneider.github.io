@@ -109,7 +109,7 @@ function App() {
               <div class="col-9 content">
                 <p class="lead">
 
-                  I'm a third year Ph.D. student at the Georgia Institute of Technology, advised by <a href="https://faculty.cc.gatech.edu/~chernova/" target="_blank" rel="noopener noreferrer">Sonia Chernova</a> as a part of the <a href="https://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL) Lab</a>. My research focuses on Task Allocation and Motion Planning (TAMP) for large-scale homogeneous systems in structured environments and improving the explainability of multi-agent systems using Explainable AI (XAI) techniques.
+                  I'm a third year Ph.D. student at the Georgia Institute of Technology, advised by <a href="https://faculty.cc.gatech.edu/~chernova/" target="_blank" rel="noopener noreferrer">Sonia Chernova</a> as a part of the <a href="https://rail-website.vercel.app/">Robot Autonomy and Interactive Learning (RAIL) Lab</a>. My research focuses on Task Allocation and Motion Planning (TAMP) for large-scale homogeneous systems in structured environments and improving the explainability of multi-agent systems using Explainable AI (XAI) techniques.
                   <br/> <br/>
                   Previously, I graduated with a B.S. in Mechatronics Engineering from Kennesaw State University, graduated with <em>summa cum laude</em> and honors. During this time, I worked as a co-op at Georgia Tech Research Institute (GTRI), developing Windows and embedded software for aircraft systems and aircraft protection
 systems test applications. After my undergrad, I began my M.S. in Robotics at Georgia Institute of Technology in Fall 2022, then transferred to the Ph.D. in Robotics as of January 2024.
