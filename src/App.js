@@ -136,10 +136,10 @@ systems test applications. After my undergrad, I began my M.S. in Robotics at Ge
                 <h5>Many-to-Many Multi-Agent Pickup and Delivery </h5>          
                 <p>
                 By <b>Ethan Schneider</b>, Jingkai Chen, Tianyi Gu, Kunlei Lian, Seth Hutchinson, Sonia Chernova <br/>
-                <i>To be Published: ICRA 2026 </i> <br/>
+                <i>In: ICRA 2026</i> <br/>
                 </p>  
                
-                <a href="https://arxiv.org/pdf/2605.07835" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Paper</a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/11696200" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-paper btn-sm"> Paper</a>
               </div>
             </div>  
 
